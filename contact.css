@@ -1,0 +1,78 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    position: relative; /* Assure que le pseudo-élément soit positionné correctement */
+}
+
+body::after {
+    content: '';
+    background-image: url(background/flamme1.jpg); /* Chemin vers votre image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8; /* Opacité réduite de l'image de fond */
+    position: fixed; /* Position fixe pour remplir toute la fenêtre */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Met en arrière-plan par rapport au contenu */
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    margin: 0 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+div.Info p{
+    list-style: none;
+    display: flex;
+    margin: 20px 15px;
+    cursor: pointer;
+
+}
+
+div.Info p span:nth-child(1){
+    width: 40px;
+}
+
+div.Info p span:nth-child(1) img{
+  max-width: 100%;  
+  filter: invert(1);
+}
+
+div.Info p span:nth-child(2){
+    color: #ffffff;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-weight:bold;
+}
+
+div.sci1{
+    display: flex;
+    justify-content: center;
+    margin: 0 18px;
+    
+}
+
+div.sci1 p{
+    display: block;
+    height: 30px;
+    margin-bottom: 50px;
+}
+div.sci1 p.sci a img{
+    height: 30px;
+    margin: 0 20px;
+}
+
+/* .golo{
+    border-radius: 50px;
+    height: 50px;
+    position:fixed;
+    bottom: 40px;
+    right: 10px;  
+} */
